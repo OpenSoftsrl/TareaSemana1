@@ -48,7 +48,7 @@
                    HorizontalOptions="End"
                    VerticalOptions="Center"/>
 
-            <Button Grid.Row="3" Grid.Column="0"  Grid.ColumnSpan="3"
+            <Button Grid.Row="3" Grid.Column="1"  Grid.ColumnSpan="2"
                     x:Name="btnPlay"
                     Text="Jugar" Clicked="btnPlay_Clicked"/>
 

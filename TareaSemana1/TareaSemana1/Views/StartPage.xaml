@@ -40,9 +40,9 @@
             <Label Grid.Row="4" Grid.Column="0"
                    Text="Saldo actual:"
                    VerticalOptions="Center"/>
-            <Entry Grid.Row="4" Grid.Column="1" 
+            <Label Grid.Row="4" Grid.Column="1" 
                    Text="100" HorizontalTextAlignment="End"
-                   x:Name="cmpSaldo"
+                   x:Name="lblSaldo"
                    WidthRequest="150"
                    HorizontalOptions="End"
                    VerticalOptions="Center"/>

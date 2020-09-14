@@ -30,7 +30,7 @@ namespace TareaSemana1.Views
             if (Preferences.ContainsKey("ciudad"))
                 cmpCiudad.Text = Preferences.Get("ciudad", "0").ToString();
             if (Preferences.ContainsKey("saldo"))
-                cmpSaldo.Text = Preferences.Get("saldo", "0").ToString();
+                lblSaldo.Text = Preferences.Get("saldo", "0").ToString();
 
         }
 
@@ -42,7 +42,7 @@ namespace TareaSemana1.Views
         {
             Preferences.Set("nombre", cmpNombre.Text);
             Preferences.Set("ciudad", cmpCiudad.Text);
-            Preferences.Set("saldo", cmpSaldo.Text);
+            Preferences.Set("saldo", lblSaldo.Text);
         }
     }
 }
