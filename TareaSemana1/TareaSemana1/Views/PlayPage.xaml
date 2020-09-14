@@ -9,7 +9,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -28,13 +28,21 @@
                    VerticalOptions="Center"/>
 
             <Label Grid.Row="1" Grid.Column="1"
+                   HeightRequest="80"
+                   BackgroundColor="Orange"
                    x:Name="lblDado1"
-                   Text="0" HorizontalTextAlignment="Center"
+                   Text="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
                    FontSize="Large"
                    VerticalOptions="Center"/>
             <Label Grid.Row="1" Grid.Column="2"
+                   HeightRequest="80"
+                   BackgroundColor="Gray"
                    x:Name="lblDado2"
-                   Text="0" HorizontalTextAlignment="Center"
+                   Text="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
                    FontSize="Large"
                    VerticalOptions="Center"/>
 
