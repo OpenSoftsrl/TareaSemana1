@@ -1,17 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TareaSemana1.Views.StartPage">
+             x:Class="TareaSemana1.Views.PlayPage">
     <ContentPage.Content>
         <Grid Padding="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="40"/>
-                <RowDefinition Height="*"/>
                 <RowDefinition Height="40"/>
+                <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -20,38 +18,37 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
             <Label Grid.Row="0" Grid.Column="0"
-                   Text="Nombre:"
+                   Text="Su apuesta:"
                    VerticalOptions="Center"/>
             <Entry Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"
-                   x:Name="cmpNombre"
-                   Placeholder="Nombre"
+                   x:Name="cmpApuesta"
+                   Placeholder="Apuesta"
                    VerticalOptions="Center"/>
 
-            <Label Grid.Row="1" Grid.Column="0"
-                   Text="Ciudad:"
+            <Label Grid.Row="1" Grid.Column="1"
+                   x:Name="lblDado1"
+                   Text="0" HorizontalTextAlignment="Center"
+                   FontSize="Large"
                    VerticalOptions="Center"/>
-            <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"
-                   x:Name="cmpCiudad"
-                   Placeholder="Ciudad"
+            <Label Grid.Row="1" Grid.Column="2"
+                   x:Name="lblDado2"
+                   Text="0" HorizontalTextAlignment="Center"
+                   FontSize="Large"
                    VerticalOptions="Center"/>
 
-            <Label Grid.Row="4" Grid.Column="0"
+            <Label Grid.Row="2" Grid.Column="0"
                    Text="Saldo actual:"
                    VerticalOptions="Center"/>
-            <Entry Grid.Row="4" Grid.Column="1" 
-                   Text="100" HorizontalTextAlignment="End"
-                   x:Name="cmpSaldo"
+            <Label Grid.Row="2" Grid.Column="1" 
+                   Text="0" HorizontalTextAlignment="End"
+                   x:Name="lblSaldo"
                    WidthRequest="150"
                    HorizontalOptions="End"
                    VerticalOptions="Center"/>
 
-            <Button Grid.Row="6" Grid.Column="0"  Grid.ColumnSpan="2"
-                    x:Name="btnGuardar"
-                    Text="Guardar"
-                    Clicked="btnGuardar_Clicked"/>
-            <Button Grid.Row="6" Grid.Column="2"  Grid.ColumnSpan="2"
+            <Button Grid.Row="3" Grid.Column="0"  Grid.ColumnSpan="3"
                     x:Name="btnPlay"
                     Text="Jugar" Clicked="btnPlay_Clicked"/>
 
